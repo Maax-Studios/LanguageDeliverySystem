@@ -13,6 +13,11 @@
 
             die("Connection failed: " . mysqli_connect_error());
 
+        } else {
+                
+            sql = "CREATE TABLE `mstudios`.`products` ( `package` VARCHAR(100) NOT NULL , `strings` JSON NOT NULL , PRIMARY KEY (`package`))";
+            $result = mysqli_query($conn, $sql);
+            
         }
 
     $error = array(
