@@ -15,7 +15,7 @@
 
         } else {
                 
-            sql = "CREATE TABLE `mstudios`.`products` ( `package` VARCHAR(100) NOT NULL , `strings` JSON NOT NULL , PRIMARY KEY (`package`))";
+            $sql = "CREATE TABLE IF NOT EXISTS `products` ( `package` VARCHAR(100) NOT NULL , `strings` JSON NOT NULL , PRIMARY KEY (`package`))";
             mysqli_query($conn, $sql);
             
         }
@@ -47,4 +47,6 @@
         }
 
     }
+
+    mysqli_close($conn);
 ?>
