@@ -2,5 +2,5 @@
 Simple PHP API for the Maax´s Studios Roleplay Language Module
 
 ```php
-  https://your-url.com/?product=product-id
+  https://your-url.com/?package=package-name
 ```
